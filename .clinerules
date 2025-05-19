@@ -1,0 +1,25 @@
+## Technical Context
+
+AI Receptionist Blog is a bare bones website built in pure html and css and deployed to github pages. The development environment is macOS using the VS Code IDE. 
+
+JS could be used if needed for responsiveness, but no JS would be preferred.
+
+The color scheme, font and other styling should match that of https://ai-receptionist.com/
+
+The file `static/robots.txt` should be used to encourage scraping from search engines.
+
+The site will be hosted on github pages at https://blog.ai-receptionist.com.
+
+
+The site will just be a running list of current blogs in chronological order with the newest blogs on top.
+
+The blog previews in the list should contain a title, date, image and a paragraph or two with a link to the full page stand alone blog article.
+
+URLs for the blog articles should be SEO aware, packed full of keywords. All HTML should be SEO optimized.
+
+Use the image: `undraw_page-not-found_6wni.svg` for any 404 page not founds.
+
+
+## TODO
+
+1. 
