@@ -37,11 +37,6 @@ GIT_SSH_COMMAND="ssh -i ~/.ssh/ed25519_dee_bugger" git push origin main
 # 5. Check 'Enforce HTTPS' if available
 
 # Note: You'll need to configure your DNS settings at Namecheap:
-# 1. Add A records pointing to GitHub Pages IPs:
-#    185.199.108.153
-#    185.199.109.153
-#    185.199.110.153
-#    185.199.111.153
-# 2. Add CNAME record:
+# 1. Add CNAME record:
 #    Host: blog
 #    Value: 0x44dd22.github.io
