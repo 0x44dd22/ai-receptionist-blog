@@ -3,25 +3,13 @@
   <url>
     <loc>https://blog.ai-receptionist.com/</loc>
     <lastmod>2025-05-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://blog.ai-receptionist.com/404.html</loc>
-    <lastmod>2025-05-19</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.1</priority>
   </url>
   <url>
     <loc>https://blog.ai-receptionist.com/blogs/hello-world-meet-ai-receptionist.html</loc>
     <lastmod>2025-05-19</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://blog.ai-receptionist.com/blogs/why-ai-receptionists-beat-traditional-phone-systems-every-time.html</loc>
     <lastmod>2025-05-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
   </url>
 </urlset>

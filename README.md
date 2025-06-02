@@ -45,10 +45,10 @@ open index.html
 Or use Python's built-in HTTP server:
 
 ```bash
-python -m http.server 8000
+python -m http.server 8002
 ```
 
-Then visit `http://localhost:8000` in your browser.
+Then visit `http://localhost:8002` in your browser.
 
 ## Deployment
 

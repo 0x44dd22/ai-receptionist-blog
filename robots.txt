@@ -1,16 +1,3 @@
 User-agent: *
 Allow: /
 Sitemap: https://blog.ai-receptionist.com/sitemap.xml
-
-# Allow crawling of all content
-User-agent: *
-Disallow:
-
-# Encourage crawling of blog content
-User-agent: *
-Allow: /blogs/
-Allow: /static/blog1/
-
-# Prevent crawling of error pages
-User-agent: *
-Disallow: /404.html
