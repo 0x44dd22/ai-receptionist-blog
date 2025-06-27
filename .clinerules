@@ -22,4 +22,16 @@ Use the image: `undraw_page-not-found_6wni.svg` for any 404 page not founds.
 
 ## TODO
 
-1. 
+1. In index.html, section:
+
+
+
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>AI Receptionist Blog</h1>
+                <p>Explore the cutting edge of AI-powered phone automation, customer experience trends, and business communication strategies from the team behind AI Receptionist.</p>
+            </div>
+            <div class="scroll-indicator"></div>
+        </section>
+
+I need a fixed carousel section underneath featuring a thumbnail of the article and a title for the latest 3 blog articles.
