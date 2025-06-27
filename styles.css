@@ -293,6 +293,7 @@ main {
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
 }
 
 .blog-post h1 {
@@ -542,8 +543,11 @@ footer {
 
 /* Latest Articles Carousel */
 .latest-articles-carousel {
-  margin: 3rem 0 4rem;
-  padding: 0;
+  margin: 3rem 1rem 4rem;
+  padding: 2rem 1rem;
+  background-color: var(--surface);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .carousel-title {
