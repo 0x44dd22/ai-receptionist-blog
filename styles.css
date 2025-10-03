@@ -398,6 +398,17 @@ footer {
   margin: 0 auto;
 }
 
+/* Centered image helper used by blog posts. Prefer applying the class to the <img> element */
+/* Apply class="center-image" directly to <img> elements. */
+img.center-image {
+  max-width: 900px; /* limit hero width so it can be visibly centered on wide viewports */
+  width: auto; /* let SVGs preserve intrinsic aspect and whitespace */
+  height: auto;
+  display: block;
+  margin: 0 auto 24px auto;
+  border-radius: 8px;
+}
+
 .error-content h1 {
   font-size: 2.5rem;
   color: var(--on-surface);
