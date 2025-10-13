@@ -27,8 +27,8 @@
 
 ## 📊 Set Up These Tools
 
-- [ ] Google Search Console - https://search.google.com/search-console
-- [ ] Bing Webmaster Tools - https://www.bing.com/webmasters
+- [x] Google Search Console - https://search.google.com/search-console
+- [x] Bing Webmaster Tools - https://www.bing.com/webmasters
 - [ ] Google PageSpeed Insights - https://pagespeed.web.dev/
 
 ## 🎬 Content Calendar (Next 3 Months)
