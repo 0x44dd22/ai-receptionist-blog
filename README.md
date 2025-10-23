@@ -50,6 +50,36 @@ python -m http.server 8002
 
 Then visit `http://localhost:8002` in your browser.
 
+## Image Optimization
+
+The blog uses WebP images with PNG/JPG fallbacks for optimal performance. To optimize images:
+
+### 1. Check Current Image Sizes
+```bash
+npm run optimize:images:check
+```
+
+### 2. Optimize All Images
+Converts PNG/JPG to WebP format with 85% quality and resizes images larger than 1200px width:
+```bash
+npm run optimize:images
+```
+
+This script:
+- Scans `static/` directory for PNG/JPG images
+- Converts to WebP format (85% quality)
+- Resizes images > 1200px width (maintains aspect ratio)
+- Backs up originals with `.original` extension
+- Reports file size savings
+
+### 3. Update HTML to Use WebP
+Updates all HTML files to use `<picture>` tags with WebP sources and PNG/JPG fallbacks:
+```bash
+npm run update:html:webp
+```
+
+**Result:** Images are typically 85-95% smaller while maintaining visual quality.
+
 ## Deployment
 
 The site is deployed on GitHub Pages with a custom domain (blog.ai-receptionist.com). To deploy:

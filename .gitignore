@@ -1,3 +1,11 @@
 public/
 .blogprompts/
 
+.DS_Store
+node_modules
+/dist
+
+# Image optimization backups
+*.original.png
+*.original.jpg
+*.original.jpeg
