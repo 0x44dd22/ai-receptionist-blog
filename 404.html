@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZR4BK19JG"></script>
+    <!-- Google tag (gtag.js) - Production only -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-2ZR4BK19JG');
+      // Only load GA in production environment (blog.ai-receptionist.com)
+      var isProduction = window.location.hostname === 'blog.ai-receptionist.com';
+      var isLocalhost = window.location.hostname.includes('localhost') || 
+                       window.location.hostname.includes('127.0.0.1') ||
+                       window.location.hostname.startsWith('192.168.') ||
+                       window.location.hostname.startsWith('10.') ||
+                       window.location.hostname === '';
+      
+      // Only load Google Analytics if in production and not localhost/dev
+      if (isProduction && !isLocalhost) {
+        (function() {
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-5TEJ6RDCNM';
+          document.head.appendChild(script);
+          
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-5TEJ6RDCNM');
+          
+          // Make gtag available globally
+          window.gtag = gtag;
+        })();
+      } else {
+        // Provide a no-op gtag function for development
+        console.log('[GA] Google Analytics disabled for development environment');
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function() {
+          console.log('[GA] Event (not sent):', arguments);
+        };
+      }
     </script>
     <meta charset="UTF-8">
     <link rel="icon" type="image/svg+xml" href="static/receptionist_logo_v1.svg" />
