@@ -402,7 +402,7 @@ footer {
 /* Apply class="center-image" directly to <img> elements. */
 img.center-image {
   max-width: 900px; /* limit hero width so it can be visibly centered on wide viewports */
-  width: auto; /* let SVGs preserve intrinsic aspect and whitespace */
+  width: 100%; /* ensure full width scaling on mobile */
   height: auto;
   display: block;
   margin: 0 auto 24px auto;
@@ -510,10 +510,28 @@ img.center-image {
   }
 
   .nav-links a {
-    padding: 0.5rem;
+    padding: 0.75rem;
     width: 100%;
     text-align: center;
-    /* margin: 0.25rem 0; */
+    margin: 0.5rem 0;
+  }
+
+  /* Add extra spacing after phone number */
+  .nav-links .phone-link {
+    margin-bottom: 2rem !important;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    padding: 0.75rem 1rem;
+  }
+
+  /* Reduce phone icon and text size to fit on one line */
+  .nav-links .phone-link svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .nav-links .phone-link span {
+    margin-left: 0.1rem;
   }
 
   .blog-post {
@@ -672,6 +690,19 @@ img.center-image {
   .carousel-item h3 {
     font-size: 0.8rem;
     padding: 0.4rem 0.6rem;
+  }
+  
+  /* Blog post images on mobile */
+  .blog-post img,
+  img.center-image {
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem 0;
+    padding: 0;
+  }
+  
+  .blog-post {
+    padding: 1rem;
   }
 }
 
