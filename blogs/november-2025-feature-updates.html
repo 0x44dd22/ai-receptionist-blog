@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) - Production only -->
+    <script>
+      // Only load GA in production environment (blog.ai-receptionist.com)
+      var isProduction = window.location.hostname === 'blog.ai-receptionist.com';
+      var isLocalhost = window.location.hostname.includes('localhost') || 
+                       window.location.hostname.includes('127.0.0.1') ||
+                       window.location.hostname.startsWith('192.168.') ||
+                       window.location.hostname.startsWith('10.') ||
+                       window.location.hostname === '';
+      
+      // Only load Google Analytics if in production and not localhost/dev
+      if (isProduction && !isLocalhost) {
+        (function() {
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-5TEJ6RDCNM';
+          document.head.appendChild(script);
+          
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-5TEJ6RDCNM');
+          
+          // Make gtag available globally
+          window.gtag = gtag;
+        })();
+      } else {
+        // Provide a no-op gtag function for development
+        console.log('[GA] Google Analytics disabled for development environment');
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function() {
+          console.log('[GA] Event (not sent):', arguments);
+        };
+      }
+    </script>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="../static/receptionist_logo_v1.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>What's New: November 2025 Feature Updates - AI Receptionist</title>
+    <meta name="title" content="What's New: November 2025 Feature Updates - AI Receptionist">
+    <meta name="description" content="Discover the latest AI Receptionist features: Call Transfer Permission, System Emails, Extension Dialing, Boss Mode authentication, and improved silence detection. See what's new this month.">
+    <meta name="keywords" content="ai receptionist updates, call transfer permission, system emails, extension dialing, boss mode, november 2025 features, ai phone assistant updates">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://blog.ai-receptionist.com/blogs/november-2025-feature-updates.html">
+    <meta property="og:title" content="What's New: November 2025 Feature Updates - AI Receptionist">
+    <meta property="og:description" content="Discover the latest AI Receptionist features: Call Transfer Permission, System Emails, Extension Dialing, Boss Mode authentication, and improved silence detection. See what's new this month.">
+    <meta property="og:image" content="https://blog.ai-receptionist.com/static/blog8/november-2025-features-hero.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://blog.ai-receptionist.com/blogs/november-2025-feature-updates.html">
+    <meta property="twitter:title" content="What's New: November 2025 Feature Updates - AI Receptionist">
+    <meta property="twitter:description" content="Discover the latest AI Receptionist features: Call Transfer Permission, System Emails, Extension Dialing, Boss Mode authentication, and improved silence detection. See what's new this month.">
+    <meta property="twitter:image" content="https://blog.ai-receptionist.com/static/blog8/november-2025-features-hero.png">
+
+    <!-- Additional SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="AI Receptionist">
+    <meta name="theme-color" content="#6C63FF">
+    <link rel="canonical" href="https://blog.ai-receptionist.com/blogs/november-2025-feature-updates.html">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="https://ai-receptionist.com" class="logo-container">
+                <img src="../static/receptionist_logo_v1.svg" alt="AI Receptionist Logo">
+                <span>AI Receptionist</span>
+            </a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="nav-links">
+                <a href="tel:1-505-600-6295" class="phone-link">
+                    <svg class="phone-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                    </svg>
+                    <span>1-505-600-6295</span>
+                </a>
+                <a href="/">BLOG</a>
+                <a href="https://ai-receptionist.com/pricing">PRICING</a>
+                <a href="https://ai-receptionist.com/demo">DEMO</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article class="blog-post">
+            <h1>What's New: November 2025 Feature Updates</h1>
+            <div class="date">November 20, 2025</div>
+
+            <picture>
+                <source srcset="../static/blog8/november-2025-features-hero.webp" type="image/webp">
+                <img class="center-image" src="../static/blog8/november-2025-features-hero.png" alt="November 2025 AI Receptionist feature updates overview" loading="lazy">
+            </picture>
+
+            <p>We've been hard at work improving AI Receptionist based on your feedback and feature requests. This November, we're excited to share several powerful new capabilities that give you more control over call management and enhance how your AI Receptionist handles incoming calls.</p>
+
+            <h2>Call Transfer Permission</h2>
+            <picture>
+                <source srcset="../static/blog8/permission-transfer.webp" type="image/webp">
+                <img class="center-image" src="../static/blog8/permission-transfer.png" alt="Call Transfer Permission feature showing SMS notification with caller details" loading="lazy">
+            </picture>
+            <p>Take full control of your incoming calls with our new Call Transfer Permission feature. Now you can review caller information before accepting transfers - no more surprise interruptions during important meetings or family time.</p>
+            
+            <p>Here's how it works: when someone calls and the AI determines they should be transferred to you, you'll receive an SMS notification with all the caller details and a link to the live call dashboard. You can then choose to accept or decline the transfer while the AI keeps the caller engaged. It's the perfect balance between staying connected and maintaining control over your time.</p>
+            
+            <p><a href="https://ai-receptionist.com/features/call-transfer-permission/">Learn more about Call Transfer Permission →</a></p>
+
+            <h2>System Emails</h2>
+            <picture>
+                <source srcset="../static/blog8/system-emails.webp" type="image/webp">
+                <img class="center-image" src="../static/blog8/system-emails.png" alt="System Emails feature showing email notification interface" loading="lazy">
+            </picture>
+            <p>Stay informed when things don't go as planned. The AI Receptionist now sends you email notifications when it detects confusion, conflicting instructions, or missing information during calls. This helps you continuously improve your AI's performance and address any gaps in your call handling setup.</p>
+            
+            <p>But that's not all - you can also configure your AI Receptionist to send emails to your team members and contacts. Just add an AI Instruction specifying when and to whom emails should be sent. This opens up powerful automation possibilities for your business communications.</p>
+            
+            <p><a href="https://ai-receptionist.com/features/system-emails/">Learn more about System Emails →</a></p>
+
+            <h2>Extension Dialing</h2>
+            <picture>
+                <source srcset="../static/blog8/extension-dialing.webp" type="image/webp">
+                <img class="center-image" src="../static/blog8/extension-dialing.png" alt="Extension Dialing configuration in contact settings" loading="lazy">
+            </picture>
+            <p>For businesses using phone systems with extensions, this one's for you. The AI Receptionist can now dial phone extensions automatically when transferring calls. Simply configure the extension numbers in your contact settings, and the AI will handle the rest - seamlessly connecting callers to the right department or person without any manual intervention.</p>
+
+            <h2>Boss Mode Enhanced Authentication</h2>
+            <picture>
+                <source srcset="../static/blog8/boss-mode.webp" type="image/webp">
+                <img class="center-image" src="../static/blog8/boss-mode.png" alt="Boss Mode password authentication via phone keypad" loading="lazy">
+            </picture>
+            <p>We've enhanced Boss Mode security with password authentication options. You can now protect your call summaries and messages with either a PIN code entered via phone keypad or a verbal passphrase. Note that you still need to call from your registered phone number in your "My Contact" settings - the password adds an extra layer of security on top of phone number verification.</p>
+
+            <h2>Call Transfer Verbal Confirmation</h2>
+            <p>Clarity matters. The AI Receptionist now always announces "Call Transferring" before every call transfer. This verbal confirmation ensures both you and your callers know exactly when a transfer is taking place, eliminating any confusion about call status.</p>
+
+            <h2>Better Silence Detection</h2>
+            <p>We've significantly improved how the AI handles silent callers. The system now intelligently attempts to re-engage unresponsive callers and politely ends calls when necessary, rather than waiting indefinitely. Plus, call transcriptions now clearly show periods of silence instead of attempting to transcribe background noise - making your transcripts cleaner and more useful.</p>
+
+            <h2>Try These Features Today</h2>
+            <p>All of these features are now live and available to AI Receptionist users. We're committed to continuously improving based on your feedback and needs. If you have questions about any of these updates or suggestions for future features, our support team is always ready to help.</p>
+
+            <p>Not using AI Receptionist yet? <a href="https://ai-receptionist.com/pricing">Check out our plans</a> and see how these powerful features can transform your business communications.</p>
+
+            <div class="callout">
+                <p>Want to see all our features in action? <a href="https://ai-receptionist.com/features/">Visit our features page</a> for detailed guides and videos.</p>
+            </div>
+
+            <p>---</p>
+            
+            <!-- Author Bio Section -->
+            <div class="author-bio">
+                <div class="author-bio-header">
+                    <picture>
+                <source srcset="../static/about/tim.webp" type="image/webp">
+                <img class="author-avatar" src="../static/about/tim.png" alt="Tim Molter" loading="lazy">
+            </picture>
+                    <div class="author-info">
+                        <h3 class="author-name">Tim Molter</h3>
+                        <p class="author-title">Co-Founder</p>
+                    </div>
+                </div>
+                <div class="author-bio-content">
+                    <p>Tim is a seasoned software architect and entrepreneur with degrees in Physics and Electrical Engineering. He has served as CTO for multiple technology companies, building highly resilient, complex technical systems. He has architected production systems for cryptocurrency wallets including Koala Wallet and Coinomi.</p>
+                    <p>At AI Receptionist, Tim leads technical architecture, bringing his expertise in building fault-tolerant distributed systems and cloud infrastructure. His approach combines software engineering best practices with a deep understanding of what makes systems reliable and scalable in the real world—critical for a service that never sleeps.</p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/tmolter/" target="_blank" class="author-linkedin">Tim's LinkedIn</a> • 
+                        <a href="https://ai-receptionist.com/about" class="author-linkedin">About Our Team</a>
+                    </p>
+                </div>
+            </div>
+
+        </article>
+        
+        <!-- Related Articles Carousel -->
+        <div class="latest-articles-carousel">
+            <h2 class="carousel-title">May also interest you...</h2>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <article class="carousel-item">
+                        <a href="call-transfer-permission-control-your-calls.html">
+                            <picture>
+                                <source srcset="../static/blog6/business-professional-call-transfer-decision.webp" type="image/webp">
+                                <img src="../static/blog6/business-professional-call-transfer-decision.png" alt="Business professional making call transfer decision" loading="lazy">
+                            </picture>
+                            <h3>Call Transfer Permission: Take Control of Your Business Calls</h3>
+                        </a>
+                    </article>
+                    <article class="carousel-item">
+                        <a href="boss-mode-stay-in-the-know.html">
+                            <img src="../static/blog4/boss-mode-on-the-go.svg" alt="Boss Mode - stay in the know">
+                            <h3>Boss Mode: Stay in the Know, Wherever You Go</h3>
+                        </a>
+                    </article>
+                    <article class="carousel-item">
+                        <a href="sip-integration-connect-ai-receptionist-to-voip.html">
+                            <picture>
+                                <source srcset="../static/blog7/enterprise-phone-system-dashboard.webp" type="image/webp">
+                                <img src="../static/blog7/enterprise-phone-system-dashboard.png" alt="Enterprise Phone System Dashboard Interface" loading="lazy">
+                            </picture>
+                            <h3>Connect Your AI Receptionist to Your Existing Phone System: SIP Integration Now Available</h3>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://ai-receptionist.com/legal/privacy-policy">Privacy</a>
+                <a href="https://ai-receptionist.com/legal/terms-of-service">Terms</a>
+                <a href="https://ai-receptionist.com/contact">Contact</a>
+                <a href="https://ai-receptionist.com/help">Help</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
