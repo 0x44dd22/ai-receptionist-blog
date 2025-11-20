@@ -398,40 +398,15 @@ if (storedPhoneNumber == null || !storedPhoneNumber.equals(this.callerPhoneNumbe
                 <li>We design so that even when things go wrong, data stays protected</li>
             </ul>
 
-            <h2>Red Flags to Watch For</h2>
-            <p>If you're evaluating an AI system with calendar integration, ask these questions:</p>
+            <h2>Questions to Consider Before Deploying a Production AI System</h2>
+            <p>If you're evaluating an AI system that could leak private information, ask these questions:</p>
 
             <ol>
-                <li><strong>Can the AI access all my calendars, or only selected ones?</strong>
-                    <ul>
-                        <li>Red flag: "It connects to your Google account"</li>
-                        <li>Good sign: "You explicitly select which calendars to use"</li>
-                    </ul>
-                </li>
-                <li><strong>What event data does the AI see?</strong>
-                    <ul>
-                        <li>Red flag: "It needs to see event details to understand context"</li>
-                        <li>Good sign: "It only sees availability blocks and time slots"</li>
-                    </ul>
-                </li>
-                <li><strong>Can one customer see another customer's data?</strong>
-                    <ul>
-                        <li>Red flag: "We use prompt engineering to prevent that"</li>
-                        <li>Good sign: "Data is filtered at the code level before reaching the AI"</li>
-                    </ul>
-                </li>
-                <li><strong>What happens if I try to trick the AI?</strong>
-                    <ul>
-                        <li>Red flag: Defensive answer or uncertainty</li>
-                        <li>Good sign: "We've tested adversarial prompts—the data simply isn't available"</li>
-                    </ul>
-                </li>
-                <li><strong>Can I see what data the AI has access to?</strong>
-                    <ul>
-                        <li>Red flag: "It's complicated" or "Trust us"</li>
-                        <li>Good sign: Transparent documentation and logs</li>
-                    </ul>
-                </li>
+                <li><strong>Can the AI access all my calendars/data, or only selected ones?</strong></li>
+                <li><strong>What event data does the AI see?</strong></li>
+                <li><strong>Can one customer see (or ask the AI for) another customer's data?</strong></li>
+                <li><strong>What happens if I try to trick the AI?</strong></li>
+                <li><strong>Can I see what data the AI has access to?</strong></li>
             </ol>
 
             <h2>The MCP Dilemma: Power vs. Security</h2>
