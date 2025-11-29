@@ -6,7 +6,8 @@
   "scripts": {
     "optimize:images": "node scripts/optimize-images.mjs",
     "optimize:images:check": "node scripts/check-image-sizes.mjs",
-    "update:html:webp": "node scripts/update-html-for-webp.mjs"
+    "update:html:webp": "node scripts/update-html-for-webp.mjs",
+    "verify": "node scripts/verify-deployment.mjs"
   },
   "devDependencies": {
     "sharp": "^0.33.5"
